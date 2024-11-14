@@ -44,7 +44,7 @@ average_salary AS (
   GROUP BY
     skills_job_dim.skill_id
 )
--- Return high demand and high salaries for 10 skills 
+-- Return high demand and high salaries for 25 skills 
 SELECT
   skills_demand.skills,
   skills_demand.demand_count,
@@ -57,5 +57,5 @@ FROM
 ORDER BY
   demand_count DESC, 
 	avg_salary DESC
-LIMIT 10 --Limit 25
+LIMIT 25
 ; 
